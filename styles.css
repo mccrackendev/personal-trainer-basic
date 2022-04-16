@@ -9,7 +9,7 @@
 /* html and body styles */
 html,
 body {
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 0.25em;
   background-color: var(--clr-light);
@@ -52,20 +52,20 @@ header {
 .header__logo-wrapper {
   padding: 1rem;
   display: flex;
+  align-items: center;
   gap: 0.5rem;
   width: 100%;
 }
 
 .header__logo-wrapper img {
-  /* width: 50%; */
-  max-width: 150px;
+  width: 50px;
+  height: 50px;
 }
 
 .header__logo-wrapper h1 {
   padding: 0;
+  margin: 0;
   border-bottom: 0.5rem solid var(--clr-accent);
-  display: flex;
-  align-items: flex-end;
 }
 
 nav {
@@ -121,11 +121,6 @@ nav a:hover {
     font-size: 1.5rem;
   }
 
-  .header__logo-wrapper img {
-    height: 5rem;
-    width: 5rem;
-  }
-
   .header__logo-wrapper h1 {
     padding: 0;
   }
@@ -146,15 +141,14 @@ nav a:hover {
   width: 100%;
 }
 /* about */
-.about-section {
+.about-section__grid-wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
 .about-section__img-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about-section__story-wrapper {
@@ -163,6 +157,11 @@ nav a:hover {
 
 .about-section__story-wrapper p {
   font-size: 2rem;
+}
+
+.about-section__story-wrapper p:first-child {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .about-section__link-wrapper {
@@ -182,29 +181,25 @@ nav a:hover {
 }
 
 /* about section media queries */
-@media screen and (max-width: 1200px) {
-  .about-section {
-    grid-template-columns: 1fr;
-    padding: 0 0.25rem;
-    text-align: center;
-  }
-
-  .about-section h2 {
-    order: -1;
-  }
-
-  .about-section__img-wrapper {
-    order: 1;
-  }
-
-  .about-section__story-wrapper {
-    order: 2;
+@media screen and (max-width: 1000px) {
+  .about-section__story-wrapper p {
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .about-section__story-wrapper p {
-    font-size: 1.5rem;
+@media screen and (max-width: 700px) {
+  .about-section {
+    text-align: center;
+  }
+
+  .about-section__grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section__img-wrapper {
+    order: -1;
+    margin: 0 auto;
+    max-width: 50%;
   }
 }
 
