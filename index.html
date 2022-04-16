@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assests/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Personal Trainer Basic Template</title>
+  </head>
+  <body>
+    <!-- header/nav -->
+    <header>
+      <!-- website logo -->
+      <div class="header__logo-wrapper">
+        <img src="./assests/favicon-32x32.png" alt="logo image" />
+        <h1>Company Title</h1>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="hero-section">
+        <img src="./assests/HeroImage.jpg" alt="Hero Image" />
+      </section>
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <h2>My Story</h2>
+        <div class="about-section__story-wrapper">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+            hic ipsum doloremque, iste facere possimus modi saepe aliquid omnis
+            quo quam, esse soluta veritatis. Exercitationem impedit provident
+            aut adipisci error.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+            deleniti, quis voluptatem quos nemo, ut quas obcaecati, sunt ad
+            nihil eos reiciendis quaerat tempora rem corrupti? Voluptate numquam
+            incidunt fugiat?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            deleniti alias, maiores illum voluptates consequatur velit libero
+            praesentium qui quas sed at similique ex voluptate pariatur ducimus
+            voluptas eveniet reprehenderit.
+          </p>
+          <div class="about-section__link-wrapper">
+            <a href="#contact">Work with me</a>
+          </div>
+        </div>
+        <div class="about-section__img-wrapper">
+          <img
+            src="./assests/ProfilePhotojpg.jpg"
+            alt="Trainer profile image"
+          />
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section id="services" class="services-section">
+        <h2>My Services</h2>
+        <div class="services-section__card-wrapper">
+          <div class="services-section__card">
+            <h3>Personal Training</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              corrupti quas suscipit ex ratione, aut laboriosam exercitationem,
+              ducimus temporibus odio nisi iste non. Sapiente, dolor ad! Modi
+              similique iusto vel?
+            </p>
+          </div>
+          <div class="services-section__card">
+            <h3>Nutrition Coaching</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              corrupti quas suscipit ex ratione, aut laboriosam exercitationem,
+              ducimus temporibus odio nisi iste non. Sapiente, dolor ad! Modi
+              similique iusto vel?
+            </p>
+          </div>
+          <div class="services-section__card">
+            <h3>Competition Prep</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              corrupti quas suscipit ex ratione, aut laboriosam exercitationem,
+              ducimus temporibus odio nisi iste non. Sapiente, dolor ad! Modi
+              similique iusto vel?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials section -->
+      <section id="testimonials" class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonials-section__testimonials-flex-wrapper">
+          <div class="testimonial">
+            <div class="testimonial__client-info">
+              <img src="./assests/ProfilePhotojpg.jpg" alt="client photo" />
+              <div>
+                <h3>Jane Doe</h3>
+                <p>Personal training client</p>
+              </div>
+            </div>
+            <blockquote>
+              <strong>“</strong>I loved working with them!
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__client-info">
+              <img src="./assests/ProfilePhotojpg.jpg" alt="client photo" />
+              <div>
+                <h3>Jane Smith</h3>
+                <p>Competition prep client</p>
+              </div>
+            </div>
+            <blockquote>
+              <strong>“</strong>Made huge improvements on my lifts!
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__client-info">
+              <img src="./assests/ProfilePhotojpg.jpg" alt="client photo" />
+              <div>
+                <h3>Steve McSteverson</h3>
+                <p>Nutrition coaching client</p>
+              </div>
+            </div>
+            <blockquote><strong>“</strong>It worked!</blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer/contact -->
+    <footer id="contact" class="footer">
+      <!-- contact form - uses netlify forms -->
+      <div class="contact-wrapper">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="contact-form"
+        >
+        <h2>Contact me</h2>
+          <div class="contact-form__inputs">
+            <p class="contact-form__displayed-input">
+              <label for="name"
+                >Your Name:
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Please enter your name..."
+              /></label>
+
+              <label for="email"
+                >Your Email:
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Please enter your email..."
+              /></label>
+
+              <label for="message">Message: </label>
+              <textarea
+                id="message"
+                rows="10"
+                cols="25"
+                name="message"
+                placeholder="Please enter your message..."
+              ></textarea>
+            </p>
+            <!-- honeypot field -->
+            <p class="contact-form__hidden-input">
+              <label
+                >Don't fill this out if you're human<input name="bot-field"
+              /></label>
+            </p>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+        <!-- social media contacts -->
+        <div class="contact__social-div">
+          <h2>Follow me on social media</h2>
+          <div class="contact__social-div__links">
+            <a href="#"
+              >social
+              <img src="./assests/2021 Twitter logo - blue.png" alt="social Logo"
+            /></a>
+            <a href="#"
+              >social
+              <img src="./assests/2021 Twitter logo - blue.png" alt="social Logo"
+            /></a>
+            <a href="#"
+              >social
+              <img src="./assests/2021 Twitter logo - blue.png" alt="social Logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright-div">
+        <p>Copyright MccrackenDev LLC 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
