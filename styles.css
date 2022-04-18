@@ -74,7 +74,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 2em;
 }
 
 .nav {
@@ -173,6 +172,10 @@ header {
   header {
     /* flex-direction: column; */
     justify-content: center;
+  }
+
+  .nav-wrapper {
+    padding-right: 2em;
   }
 }
 
