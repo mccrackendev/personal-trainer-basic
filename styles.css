@@ -74,6 +74,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding-right: 2em;
 }
 
 .nav {
@@ -176,10 +177,11 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  .header__logo-wrapper {
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2em;
   }
-
   .header__logo-wrapper h1 {
     padding: 0;
   }
