@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="shortcut icon"
-      href="./assests/favicon.ico"
+      href="./assests/favicon.png"
       type="image/x-icon"
     />
     <title>Personal Trainer Basic Template</title>
@@ -17,15 +17,23 @@
     <header>
       <!-- website logo -->
       <div class="header__logo-wrapper">
-        <img src="./assests/favicon-32x32.png" alt="logo image" />
-        <h1>Company Title</h1>
+        <img src="./assests/logo_transparent.png" alt="logo image" />
+        <h1>MccrackenDev</h1>
       </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <!-- nav -->
+      <div class="nav-wrapper">
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+            <li class="nav__item"><a class="nav__link" href="#testimonials">Testimonials</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- hero section -->
@@ -221,4 +229,5 @@
       </div>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
